@@ -1,5 +1,10 @@
 在桌面建立一个新的文件夹，将文件都下载到该文件夹内，打开cmd，进入该文件夹，设置参数后运行命令即可。
 
+## 运行规则
+
+使用脚本前确保账户里有WBTC，本脚本会走WBTC/CBD交易对。
+脚本会先用你输入的amount_in金额的WBTC购买CBD，再将购买到的CBD全部卖出，再进行购买，循环直到达到你所设置的交易次数。
+
 ## 参数设置
 
 打开swap-cbd.js，替换下面三个参数：
@@ -28,9 +33,3 @@ npm install ethers @macarom/swap-sdk @macarom/stable-swap-sdk
 再运行
 node swap-cbd.js
 
-
-
-## 运行规则
-
-使用脚本前确保账户里有WBTC，本脚本会走WBTC/CBD交易对。
-脚本会先用你输入的amount_in金额的WBTC购买CBD，再将购买到的CBD全部卖出，再进行购买，循环直到达到你所设置的交易次数。
